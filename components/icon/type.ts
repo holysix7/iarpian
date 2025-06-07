@@ -1,4 +1,4 @@
-import { Eye, EyeClosed, Mail } from "lucide-react";
+import { Eye, EyeClosed, Mail, User } from "lucide-react";
 
 export interface IconProps {
   iconType: IconType;
@@ -9,10 +9,12 @@ export enum IconType {
   Mail = "mail",
   EyeOpen = "eyeOpen",
   EyeClosed = "eyeClosed",
+  User = "user",
 }
 
 export const IconMap: Record<IconType, any> = {
   [IconType.Mail]: Mail,
   [IconType.EyeOpen]: Eye,
   [IconType.EyeClosed]: EyeClosed,
+  [IconType.User]: User,
 };

@@ -13,51 +13,51 @@ export const ButtonVariants = cva(
   {
     variants: {
       variant: {
-        [Variant.Primary]: `bg-primary-500 text-white border-primary-500 border 
-                    hover:bg-primary-300 hover:border-primary-300
-                    active:bg-primary-700 active:border-primary-700
-                    disabled:bg-primary-60 disabled:text-primary-200 disabled:border-primary-60
-                    focus:bg-primary-500 focus:outline-primary-100 focus:border-primary-500`,
-        [Variant.Success]: `bg-success-500 text-white border-success-500 border
-                    hover:bg-success-300 hover:border-success-300
-                    active:bg-success-700 active:border-success-700
-                    disabled:bg-success-60 disabled:text-success-200 disabled:border-success-60
-                    focus:bg-success-500 focus:outline-success-100 focus:border-success-500`,
+        [Variant.Primary]: `bg-blue-500 text-white border-blue-500 border 
+                    hover:bg-blue-300 hover:border-blue-300
+                    active:bg-blue-700 active:border-blue-700
+                    disabled:bg-blue-60 disabled:text-blue-200 disabled:border-blue-60
+                    focus:bg-blue-500 focus:outline-blue-100 focus:border-blue-500`,
+        [Variant.Success]: `bg-green-500 text-white border-green-500 border
+                    hover:bg-green-300 hover:border-green-300
+                    active:bg-green-700 active:border-green-700
+                    disabled:bg-green-60 disabled:text-green-200 disabled:border-green-60
+                    focus:bg-green-500 focus:outline-green-100 focus:border-green-500`,
         [Variant.Opposite]: `bg-black text-white border-black-500 border
-                    hover:bg-neutral-1000 hover:border-neutral-1000
-                    active:bg-neutral-500 active:border-neutral-500
-                    disabled:bg-neutral-60 disabled:text-black-200 disabled:border-neutral-60
-                    focus:bg-black-500 focus:outline-neutral-700 focus:border-black-500`,
-        [Variant.Negative]: `bg-negative-500 text-white border-negative-500 border
-                    hover:bg-negative-300 hover:border-negative-300
-                    active:bg-negative-500 active:border-negative-500
-                    disabled:bg-negative-60 disabled:text-negative-200 disabled:border-negative-60
-                    focus:bg-negative-500 focus:outline-negative-100 focus:border-negative-500`,
-        [Variant.Wire]: `text-black border-neutral-800 border
-                    hover:bg-neutral-800 hover:bg-neutral-800
-                    active:bg-neutral-50 active:text-black-200 active:border-neutral-50
-                    disabled:text-neutral-200 hover:bg-neutral-800
-                    focus:outline-black hover:bg-neutral-800`,
+                    hover:bg-grey-1000 hover:border-grey-1000
+                    active:bg-grey-500 active:border-grey-500
+                    disabled:bg-grey-60 disabled:text-black-200 disabled:border-grey-60
+                    focus:bg-black-500 focus:outline-grey-700 focus:border-black-500`,
+        [Variant.Negative]: `bg-red-500 text-white border-red-500 border
+                    hover:bg-red-300 hover:border-red-300
+                    active:bg-red-500 active:border-red-500
+                    disabled:bg-red-60 disabled:text-red-200 disabled:border-red-60
+                    focus:bg-red-500 focus:outline-red-100 focus:border-red-500`,
+        [Variant.Wire]: `text-black border-grey-800 border
+                    hover:bg-grey-800 hover:bg-grey-800
+                    active:bg-grey-50 active:text-black-200 active:border-grey-50
+                    disabled:text-grey-200 hover:bg-grey-800
+                    focus:outline-black hover:bg-grey-800`,
         [Variant.Link]: `rounded-none text-blue border border-transparent
                     hover:border-b-blue
                     active:border-b-blue
-                    disabled:text-neutral-200
+                    disabled:text-grey-200
                     focus:outline-blue`,
-        [Variant.Default]: `bg-neutral-30 text-black border-neutral-30 border
-                    hover:bg-neutral-30 hover:border-neutral-30
-                    active:bg-neutral-60 active:border-neutral-60
-                    disabled:bg-neutral-60 disabled:text-neutral-200 disabled:border-neutral-60
-                    focus:bg-neutral-30 focus:outline-neutral-80 focus:border-neutral-30`,
+        [Variant.Default]: `bg-grey-30 text-black border-grey-30 border
+                    hover:bg-grey-30 hover:border-grey-30
+                    active:bg-grey-60 active:border-grey-60
+                    disabled:bg-grey-60 disabled:text-grey-200 disabled:border-grey-60
+                    focus:bg-grey-30 focus:outline-grey-80 focus:border-grey-30`,
         [Variant.Plain]: `text-black border border-transparent
-                    hover:text-neutral-500
+                    hover:text-grey-500
                     active:text-black
-                    disabled:text-neutral-100
-                    focus:outline-neutral-80`,
-        [Variant.Warning]: `bg-warning-500 text-black border-warning-500 border 
-                    hover:bg-warning-300 hover:border-warning-300
-                    active:bg-warning-700 active:border-warning-700
-                    disabled:bg-warning-60 disabled:text-warning-200 disabled:border-warning-60
-                    focus:bg-warning-500 focus:outline-warning-100 focus:border-warning-500`,
+                    disabled:text-grey-100
+                    focus:outline-grey-80`,
+        [Variant.Warning]: `bg-yellow-500 text-black border-yellow-500 border 
+                    hover:bg-yellow-300 hover:border-yellow-300
+                    active:bg-yellow-700 active:border-yellow-700
+                    disabled:bg-yellow-60 disabled:text-yellow-200 disabled:border-yellow-60
+                    focus:bg-yellow-500 focus:outline-yellow-100 focus:border-yellow-500`,
         [Variant.Custom]: "",
       },
       size: {

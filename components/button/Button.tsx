@@ -1,4 +1,3 @@
-import { Slot } from "@radix-ui/react-slot";
 import { ButtonVariants, type ButtonProps } from "components/button/type";
 import { Icon } from "components/icon/Icon";
 import { Loading } from "components/loading/Loading";
@@ -45,9 +44,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const Comp = asChild ? Slot : "button";
     return (
-      <Comp
+      <button
         className={cn(
           `flex gap-2 justify-${alignment} items-center`,
           ButtonVariants({ variant, size }),
@@ -63,7 +61,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             {children}
           </ChildrenComp>
         )}
-      </Comp>
+      </button>
     );
   }
 );

@@ -6,8 +6,10 @@ export default [
   layout("routes/InitWrapper.tsx", [
     // Public routes
     layout("routes/(public)/PublicLayout.tsx", [
-      route("/login", "routes/(public)/Login.tsx"),
-      // route('logout', 'routes/(public)/logout.tsx'), // consider to remove?
+      layout("routes/(public)/login/Layout.tsx", [
+        route("/login", "routes/(public)/login/Login.tsx"),
+        // route('logout', 'routes/(public)/logout.tsx'), // consider to remove?
+      ]),
     ]),
     // layout('routes/protected-layout.tsx', [
     //   layout('routes/(protected)/dashboard/layout.tsx', [
